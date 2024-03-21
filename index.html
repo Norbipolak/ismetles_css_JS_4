@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 5000px;
+        }
+        #square1 {
+            width: 200px;
+            height: 100px;
+            background-color: #123456;
+        }
+        #square2 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid grey;
+        }
+        #square3 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid grey;
+        }
+        .red-bg {
+            background-color: red;
+        }
+        .square4 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid grey;
+        }
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background-color: #569874;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background-color: #7a9bbc;
+        }
+        #square5 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .lightcoral-bg {
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Eseménykezelés</h1>
+    <p>
+        Az eseménykezelés a felhasználói interakciót jelenti. <br>
+        Például görgetés, klikkelés, állapotváltozás stb...
+    </p>
+
+    <h2>Eseméynkezelők létrehozása attributummal </h2>
+    <button onclick="writeConsole('asdf')">Nyomd meg!</button>
+
+    <h2>Attributum létrehozása objektummal</h2>
+    <h3>Kattintás</h3>
+    <button id="btn1">Ne nyomd meg!</button>
+
+    <h3>Állapotváltozás</h3>
+    <select id="select1">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+    </select>
+
+    <h3>onMouseOver/MouseLeave</h3>
+    <div id="square1"></div>
+
+    <h1>Attributumok manipulációja</h1>
+    <h2>Osztály</h2>
+    <div id="square2"></div>
+    <button id="add-class">add class</button>
+    <button id="remove-class">remove class</button>
+    <button id="toggle-class">toggle class</button>
+
+    <h3>Style attributum módosítása</h3>
+    <div id="square3"></div>
+
+    <button id="modify-style">modify style</button>
+
+    <h3>Forrás attributumok</h3>
+    <div>
+        <img src="https://www.google.com/search?q=ice%20tea&tbm=isch&tbs=isz:i&rlz=1C1KNTJ_huHU1072HU1072&hl=en&sa=X&ved=0CAQQpwVqFwoTCNi86ouWgYUDFQAAAAAdAAAAABAD&biw=1519&bih=695#imgrc=sTsrPiMFoxcbFM" id="img1">
+    </div>
+
+    <button id="modify-src">modify src</button>
+    <button id="remove-src">remove src</button>
+    <button id="get-attribute">get attribute</button>
+
+    <h3>innerText és innerHTML</h3>
+    <div id="square4"></div>
+    <button id="add-text">add text</button>
+    <button id="add-html">add html</button>
+
+    <h1>Event capturing és event bubbling</h1>
+    <p>
+        Az event capturing-nél kivűlről befelé halad
+        az event, az event bubbling-nál fordítva.
+        Az event bubbling az alapértelmezett.
+    </p>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+
+    <h1>Event listener törlése</h1>
+    <div id="square5"></div>
+
+    <button id="remove-event">remove event</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
